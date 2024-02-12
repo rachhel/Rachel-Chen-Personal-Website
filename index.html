@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        
+    </style>
     <title>My Portfolio</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "mediaqueries.css">
-</head>
-<body>
-    <nav id = "desktop-nav"> 
-        <div class = 'logo'> 
-            <img src = "assets/logo.png" alt = "Logo">
-        </div>
-        <div>
-            <ul class = "nav-links">
-                <li> <a href = "#about"> About </a></li>
-                <li> <a href = "#experience"> Experience </a></li>
-                <li> <a href = "#project"> Project </a></li>
-                <li> <a href = "#contact"> Contact </a></li>
 
-            </ul>
+<body>
+
+        <nav id = "desktop-nav"> 
+            <div class = "logo"> 
+                <img src = "assets/logo.png" alt = "Logo">
+            </div>
+            <div>
+                <ul class = "nav-links">
+                    <li> <a href = "#about"> About </a></li>
+                    <li> <a href = "#experience"> Experience </a></li>
+                    <li> <a href = "#projects"> Project </a></li>
+                    <li> <a href = "#contact"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id = "hamburger-nav">
+            <div class = 'logo'> 
+                <img src = "assets/logo.png" alt = "Logo">
+            </div>
+         <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick= "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li> <a href = "#about"  onclick= "toggleMenu()">About </a></li>
+                <li> <a href = "#experience" onclick= "toggleMenu()"> Experience </a></li>
+                <li> <a href = "#project" onclick= "toggleMenu()"> Project </a></li>
+                <li> <a href = "#contact" onclick= "toggleMenu()"> Contact </a></li>
+            </div>
         </div>
-    </nav>
-    <script src = "script.js"> </script>
+
+        </nav>
+            <div class =  "paralax">
+                <div class = "paralex-item p-item1"> </div>
+                <div class = "paralex-item p-item2"> </div>
+                <div class = "paralex-item p-item3"> </div>
+                <div class = "paralex-item p-item4"> </div>
+            </div>
+            <div class = "container">
+                <div class = "content-header">
+                    <h3> hi i'm</h3>
+                    <h2> Rachel Chen</h2>
+                </div>
+                <div class = "info-container"> 
+                    <img src = "assets/IMG_1249.PNG"> 
+
+                    <h4> A student at Northeastern University studying computer science and design. 
+                        I am enthusiastic about the potential that arises when technology and design come together. 
+                       My academic journey centers around full stack development, software engineering, and web development, 
+                       all with a keen eye on creating seamless and user-centric experiences. 
+                   </h4>
+                   
+                </div>
+
+                </div>
+            </div>
+           
+            
+
+            
+            <section id = "projects"> 
+            <p> class = "section_text_p1" Browse My Recent </p> 
+                <h1 class = "title"> Projects </h1>
+                <div class = "experience-details-container">
+                    <div class = "article-container">
+                        <img src = ""
+                    </div>
+                </div>
+
+
+            </section>
+
+
+            <div class = "content">
+                <img src = "assets/gridin.png" alt = "">
+            </div>
+        
+            
+   <script src = "paralax.js"> </script>
+   <script src = "script.js"> </script>
 </body>
 </html>

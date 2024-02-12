@@ -1,0 +1,24 @@
+/* when screen is lower than 1200, desktop disappears*/
+@media screen and (max-width: 1200px) {
+      /* Styles for smaller screens go here */
+      body {
+        font-size: 16px;
+    }
+    .content-header {
+        margin-left: 0; /* Adjust margin or positioning as needed */
+    }
+    .paralex-item {
+        width: 100%; /* Adjust as needed */
+    }
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+        
+
+    }
+
+  
+
+}
