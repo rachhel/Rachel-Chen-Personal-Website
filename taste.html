@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        
+    </style>
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" href = "taste.css">
+
+<body>
+
+    <nav id = "desktop-nav"> 
+            <div class = "logo"> 
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div>
+                <ul class = "nav-links">
+                    <li> <a href = "#about"> About </a></li>
+                    <li> <a href = "#experience"> Experience </a></li>
+                    <li> <a href = "#projects"> Project </a></li>
+                    <li> <a href = "#contact"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id = "hamburger-nav">
+            <div class = 'logo'> 
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+         <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick= "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li> <a href = "#about"  onclick= "toggleMenu()">About </a></li>
+                <li> <a href = "#experience" onclick= "toggleMenu()"> Experience </a></li>
+                <li> <a href = "#project" onclick= "toggleMenu()"> Project </a></li>
+                <li> <a href = "#contact" onclick= "toggleMenu()"> Contact </a></li>
+            </div>
+        </div>
+
+        </nav>
+    <div class = "header-img">
+        <img src="assets/headertaste1.png">
+    </div>
+    <div class = "elements">
+      <section class ="hidden">
+        <div class = "overview">
+            <h1> OVERVIEW</h1>
+            <p> A website created when local businesses were facing hardships after quarantine. 
+                This website shows people who are visiting LA an alternative side they can choose. Rather 
+            than going to the most famous tourist stops, people can also explore the numerous small businesses and 
+            family owned restaurants that make up the culture of the city.  </p>
+    </div>       
+    </div>
+<div class = "button-container">
+    <a href="https://github.com/rachhel/TasteofLA" class="btn"><span> Github </span> </a>
+    <a href="#" class="btn"><span> Website </span> </a>
+</div>
+   
+
+<script>
+    const btn = document.querySelector('.btn')
+    btn.onmousemove = function(e){
+        const x = e.pageX - btn.offsetLeft;
+        const y = e.pageY - btn.offsetTop;
+
+        btn.style.setProperty('--x', x + 'px');
+        btn.style.setProperty('--y', y + 'px');
+
+    }
+</script>
+    <div class = "timeline">
+        <div class = "container left-container">
+            <div class = "text-box"> 
+                <h2> 1. IDEATE </h2>
+                <ul class = "problems"> 
+                    <h3> Problem: </h3>
+                    <li> lack of representation of small businesses during travel </li>
+                    <li> struggling local businesses especially after the pandemic</li>
+                    <li> hard to find photos of local travel locations </li>
+                </ul>
+                <ul class = "solutions">
+                    <h3> Solution: </h3> 
+                    <li> build a platform to represent small businesses</li>
+                    <li> give exposure to these businesses</li>
+                    <li> have a gallery to share photos taken by other travelers</li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class = "container right-container">
+            <div class = "text-box">
+                <h2> 2. COMPETITOR RESEARCH </h2>
+                <ul class = "yelp"> 
+                    <h3> Yelp: </h3>
+                    <li> showed the most popular place only, didn't showcase local/family restaurants </li>
+                    <li> liked how informative and interactive it was with location,photos, ratings </li>
+                    <li> a lot of content, can be overwhelming </li>
+                </ul>
+                <ul class = "vsco">
+                    <h3> VSCO: </h3> 
+                    <li> great place to store photos, especially travel photos</li>
+                    <li> UI is hard to use and get used to at first</li>
+                    <li> would like to have a gallery just for travel</li>
+                </ul>
+                <span class = "right-container-arrow"></span>
+
+            </div>           
+        </div>
+
+        <div class = "container left-container">
+            <div class = "text-box">
+                <h2> 3. MOODBOARD  </h2>
+                <ul class = "moodboard"> 
+                    <img src = "assets/film.png">
+                    <li> wanted the vibes to be geared towards film </li>
+                    <li> black, white, and blue color palette </li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+
+            </div>
+
+        </div>
+        <div class = "container right-container">
+            <div class = "text-box-wireframe">
+                <h2> 4. WIREFRAME  </h2>
+                <ul class = "wireframe"> 
+                    <img src = "assets/wireframes.png">
+                    <li> first few ideations </li>
+                    <li> made a lot of changes moving forward </li>
+                </ul>
+                <span class = "right-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+        <div class = "container left-container">
+            <div class = "text-box">
+                <h2> 5. CODING!   </h2>
+                <ul class = "Code"> 
+                    <li> used html, css, and javascript to make the website come to life. </li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+    <script src = "taste.js"> </script>
+
+</body>
+</html>

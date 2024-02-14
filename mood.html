@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        
+    </style>
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" href = "mood.css">
+
+<body>
+
+    <nav id = "desktop-nav"> 
+            <div class = "logo"> 
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div>
+                <ul class = "nav-links">
+                    <li> <a href = "#about"> About </a></li>
+                    <li> <a href = "#experience"> Experience </a></li>
+                    <li> <a href = "#projects"> Project </a></li>
+                    <li> <a href = "#contact"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id = "hamburger-nav">
+            <div class = 'logo'> 
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+         <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick= "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li> <a href = "#about"  onclick= "toggleMenu()">About </a></li>
+                <li> <a href = "#experience" onclick= "toggleMenu()"> Experience </a></li>
+                <li> <a href = "#project" onclick= "toggleMenu()"> Project </a></li>
+                <li> <a href = "#contact" onclick= "toggleMenu()"> Contact </a></li>
+            </div>
+        </div>
+
+        </nav>
+    <div class = "header-img">
+        <img src="assets/mood.png">
+    </div>
+    <div class = "elements">
+      <section class ="hidden">
+        <div class = "overview">
+            <h1> OVERVIEW</h1>
+            <p> A final project as a Kode With Klossy Scholar, I wanted to create something that meant a lot to me.
+                And, that was mental health. Many students have extremely busy schedules and push themselves to overwork. 
+                Through Moodivity, people can be productive while focusing on their well-being. It helps these students plan out their weeks, 
+                jot down to-do lists, and time their study sessions. It also incorporates self-care by adding breaks, motivation,
+                 and serotonin pictures to boost users' moods </p>
+    </div>       
+    </div>
+<div class = "button-container">
+    <a href="https://github.com/rachhel/Moodivity" class="btn"><span> Github </span> </a>
+</div>
+   
+
+<script>
+    const btn = document.querySelector('.btn')
+    btn.onmousemove = function(e){
+        const x = e.pageX - btn.offsetLeft;
+        const y = e.pageY - btn.offsetTop;
+
+        btn.style.setProperty('--x', x + 'px');
+        btn.style.setProperty('--y', y + 'px');
+
+    }
+</script>
+    <div class = "timeline">
+        <div class = "container left-container">
+            <div class = "text-box"> 
+                <h2> 1. IDEATE </h2>
+                <ul class = "problems"> 
+                    <h3> Problem: </h3>
+                    <li> Students are overwhelmed and don't understand when it's time to take a break.  </li>
+                    <li> It's hard for some students to mention that they need help and they aren't really taught in school how to take care of their mental health. </li>
+                    <li> Some students need extra help when it comes to planning their days and staying on task.  </li>
+                </ul>
+                <ul class = "solutions">
+                    <h3> Solution: </h3> 
+                    <li> build a platform incorporate both mental health and planning</li>
+                    <li> make it user friendly and welcoming</li>
+                    <li> remove the stigma behind asking for help and mental health</li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class = "container right-container">
+            <div class = "text-box">
+                <h2> 2. COMPETITOR RESEARCH </h2>
+                <ul class = "yelp"> 
+                    <h3> Study Bunny: </h3>
+                    <li> Really like the animation </li>
+                    <li> like using pomodoro timer but I wish there was more to the app </li>
+                    <li> need to pay for more features </li>
+                </ul>
+                <ul class = "vsco">
+                    <h3> Notion: </h3> 
+                    <li> really enjoy using it and all it's features</li>
+                    <li> hard to set up, it's a lot of work and this turns away students who don't have the time to learn how to make their notion cater to them.</li>
+                    <li> to use more functions, you need to pay </li>
+                </ul>
+                <span class = "right-container-arrow"></span>
+
+            </div>           
+        </div>
+
+        <div class = "container left-container">
+            <div class = "text-box">
+                <h2> 3. MOODBOARD  </h2>
+                <ul class = "moodboard"> 
+                    <img src = "assets/moodboardd.png">
+                    <li> wanted the vibes to be fun and lighthearted.  </li>
+                    <li> warm color palette, welcoming and comforting. </li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+
+            </div>
+
+        </div>
+        <div class = "container right-container">
+            <div class = "text-box-wireframe">
+                <h2> 4. WIREFRAME  </h2>
+                <ul class = "wireframe"> 
+                    <img src = "assets/moood.png">
+                    <li> final ideation </li>
+                    <li> made a lot of changes before decision. </li>
+                </ul>
+                <span class = "right-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+        <div class = "container left-container">
+            <div class = "text-box">
+                <h2> 5. CODING!   </h2>
+                <ul class = "Code"> 
+                    <li> used Swift for the first time to code in XCode. </li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+    <script src = "mood.js"> </script>
+
+</body>
+</html>

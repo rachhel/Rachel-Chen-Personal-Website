@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        
+    </style>
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" href = "wander.css">
+
+<body>
+
+    <nav id = "desktop-nav"> 
+            <div class = "logo"> 
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div>
+                <ul class = "nav-links">
+                    <li> <a href = "#about"> About </a></li>
+                    <li> <a href = "#experience"> Experience </a></li>
+                    <li> <a href = "#projects"> Project </a></li>
+                    <li> <a href = "#contact"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id = "hamburger-nav">
+            <div class = 'logo'> 
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+         <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick= "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu-links">
+                <li> <a href = "#about"  onclick= "toggleMenu()">About </a></li>
+                <li> <a href = "#experience" onclick= "toggleMenu()"> Experience </a></li>
+                <li> <a href = "#project" onclick= "toggleMenu()"> Project </a></li>
+                <li> <a href = "#contact" onclick= "toggleMenu()"> Contact </a></li>
+            </div>
+        </div>
+
+        </nav>
+    <div class = "header-img">
+        <img src="assets/headerWan.png">
+    </div>
+    <div class = "elements">
+      <section class ="hidden">
+        <div class = "overview">
+            <h1> OVERVIEW</h1>
+            <p> A project created during my Exerience and Interaction class. Tasked with redesigning a 
+                travel agency, I wanted to focus on how trip planning within groups can be more efficient. 
+                Wanderluxe strive to make traveling easier for groups of younger individuals. 
+                Planning with large group is difficult, WL wants to redesign traveling to make it easier!   </p>
+    </div>       
+    </div>
+<div class = "button-container">
+    <a href="https://www.figma.com/proto/uojoLj5acHYdHUjDc3kjUQ/Untitled?type=design&node-id=23-89&t=ixUQV4x7vSkhUjPy-0&scaling=scale-down&page-id=0%3A1" class="btn"><span> High Fidelity </span> </a>
+    <a href="assets/WANDERLUXE.pdf" class="btn"><span> Presentation </span> </a>
+</div>
+   
+
+<script>
+    const btn = document.querySelector('.btn')
+    btn.onmousemove = function(e){
+        const x = e.pageX - btn.offsetLeft;
+        const y = e.pageY - btn.offsetTop;
+
+        btn.style.setProperty('--x', x + 'px');
+        btn.style.setProperty('--y', y + 'px');
+
+    }
+</script>
+    <div class = "timeline">
+        <div class = "container left-container">
+            <div class = "text-box"> 
+                <h2> 1. IDEATE </h2>
+                <ul class = "problems"> 
+                    <h3> Problem: </h3>
+                    <li> college students usually like to travel on a budget </li>
+                    <li> hard to collabrate with friends about finances and trip details</li>
+                    <li> photos get lost in collections and is shoved deep in your phone </li>
+                </ul>
+                <ul class = "solutions">
+                    <h3> Solution: </h3> 
+                    <li> filter out and cap a budget to find a spot that works well for everyone</li>
+                    <li> be able to add friends into the trip and share finances throughout the trip</li>
+                    <li> users are able to create an albume for each location and share it. No followers, just for documenting the trip. </li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class = "container right-container">
+            <div class = "text-box">
+                <h2> 2. COMPETITOR RESEARCH </h2>
+                <ul class = "yelp"> 
+                    <h3> Lonely Planet: </h3>
+                    <li> pages were too lengthy and wordy </li>
+                    <li> overwhelming due to the influx of information </li>
+                    <li> really liked the use of images and videos</li>
+                </ul>
+                <ul class = "vsco">
+                    <h3> Let's go: </h3> 
+                    <li> good use of the nav bar and good info</li>
+                    <li> don't like the aesthetics of the site</li>
+                    <li> main page takes too much of the space, not user friendly</li>
+                </ul>
+                <span class = "right-container-arrow"></span>
+
+            </div>           
+        </div>
+
+        <div class = "container left-container">
+            <div class = "text-box">
+                <h2> 3. MOODBOARD  </h2>
+                <ul class = "moodboard"> 
+                    <img src = "assets/moodboardw.png">
+                    <li> wanted the vibes to be like a scrapbook since half the mission is to document the trip </li>
+                    <li> through warm and pastel tones, it gives an exciting and lively feel, perfect for traveling.  </li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+
+            </div>
+
+        </div>
+        <div class = "container right-container">
+            <div class = "text-box-wireframe">
+                <h2> 4. WIREFRAME  </h2>
+                <ul class = "wireframe"> 
+                    <img src = "assets/wireframe.png">
+                    <li> first few ideations </li>
+                    <li> many different sketches and lots of brainstorming. </li>
+                </ul>
+                <span class = "right-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+        <div class = "container left-container">
+            <div class = "text-box">
+                <h2> 5. High-Fidelity! </h2>
+                <ul class = "Code"> 
+                    <img src = "assets/WIREFRAMEW.png">
+
+                    <li> Using Figma, I created a high fidelty wireframe of 
+                        the site. I incorporated photos and different elements to make the 
+                    website design that I envisioned.  </li>
+                </ul>
+                <span class = "left-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+    <script src = "wander.js"> </script>
+
+</body>
+</html>
