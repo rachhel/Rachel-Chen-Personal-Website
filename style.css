@@ -277,7 +277,7 @@ body {
     place-items: center;
     margin-inline: 1rem;
     padding-block: 3rem;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
 p {
@@ -463,6 +463,7 @@ to {
     background-color: lightgray;
     width: 100%;
     padding: 70px 30px 20px;
-    z-index: 5;
+    z-index: 99;
+
 }
 
