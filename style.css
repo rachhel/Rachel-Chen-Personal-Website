@@ -269,7 +269,7 @@ body {
     margin-right: 200px;
 
     text-align: center;
-    background: url(assets/gridin.png);
+    background: url(assets/gridin.png); 
 }
 
 .container1 {
@@ -409,7 +409,7 @@ to {
     .container1 {
         margin-inline: 1rem;
     }
-    .card_Data {
+    .card_data {
         width: 240px;
         padding: 1rem;
     }
@@ -440,7 +440,7 @@ to {
 
 .social {
     display:flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .social img {
@@ -463,5 +463,6 @@ to {
     background-color: lightgray;
     width: 100%;
     padding: 70px 30px 20px;
+    z-index: 5;
 }
 
