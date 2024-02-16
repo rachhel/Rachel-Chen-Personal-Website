@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: cursive;
+    src: url(cursive.ttf);
+    }
+
+@font-face {
     font-family: titleFont;
     src: url(Roxie\ rossa.ttf);
     }
@@ -18,6 +23,7 @@ font-family: 'Lato', sans-serif;
 display: block;
 justify-content: center;
 background: whitesmoke;
+background: url(assets/gridin.png);
 }
 
 html {
@@ -162,69 +168,56 @@ a:hover {
 }.hamburger-icon span:first-child {
     transform: none;
 }
-.header-img img {
-    margin-top: 160px;
+
+.social {
+    display:flex;
+    justify-content: right;
+}
+
+.social img {
     width: 100%;
-    object-fit: cover;
+    height: 30px;
+}
+.social  a{
+    text-decoration: none;
+    padding:10px;
+    background-color: white;
+    margin:10px;
+    border-radius:50%;
+}
+.social  a:hover {
+    background-color: lavenderblush;
+    transition: 0.5s;
 }
 
-.elements {
-
-    display: grid;
-    place-items: left;
-    align-content: center;
-    margin-top: 20px;
-    font-weight: 500;
-    margin-left: 200px; 
-    margin-right: 200px;
-
-}
-
-.elements h1 {
-    font-family: titleFont;
-    font-size: 55px;
-    margin-top: 200px;
-    display: grid;
-    place-items: left;
-    align-content: center;
-}
-
-.elements h4 {
-    color: gray;
-    font-size: 20px;
-}
-
-.overview {
+.footerContainer {
+    background-color: lightgray;
     width: 100%;
-    display: grid;
-    place-items: center;
-    text-align: center;
+    padding: 70px 30px 20px;
 }
-.overview p {
-    font-size: 25px;
+
+.main-container {
+    margin-top: 250px;
+    text-align: center; /* Center content horizontally */
+}
+.dark-blue {
+    color: darkblue; /* Dark blue color */
+  }
+
+.content-container {
+    display: inline-block;
+}
+
+.introduction {
+    max-width: 500px; /* Adjust the width of the introduction */
     margin-bottom: 50px;
-
-}
-.overview h1 {
-    font-family: fontTitle;
-    margin-bottom: 20px;
-}
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-}
-.show {
-    opacity:1; 
+    margin-right: 20px; /* Add margin between the divs */
+    display: inline-block; /* Display the introduction div inline */
+    vertical-align: top; /* Align to the top of the container */
 }
 
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition:none;
-    }
-}
 .button-container {
     display:flex;
-    justify-content:center;
 }
 .btn {
     position: relative;
@@ -236,6 +229,10 @@ a:hover {
     letter-spacing: 1px;
     overflow: hidden;
     margin: 0 10px; /* Adjust the margin as needed */
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 90px;
+
 
 }
 
@@ -253,7 +250,7 @@ a:hover {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background:lavenderblush;
+    background:navy;
     transition:width 0.5s, height 0.5s;
 }
 .btn:hover::before {
@@ -261,144 +258,64 @@ a:hover {
     height: 300px;
 }
 
-.timeline {
-    position: relative;
-    max-width: 1500px;
-    margin: 100px auto;
+h2 {
+    font-family: titleFont;
+    margin-bottom: 20px;
 }
-.container {
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-    color: black;
-    animation: movedown 1s linear forwards;
-    opacity:0;
-}
-@keyframes movedown {
-    0% {
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+p {
+    margin-bottom: 20px;
 }
 
-.text-box {
-    padding: 20px 30px;
-    background: white;
-    position: relative;
-    border-radius: 10px;
-    font-size: 15px; 
-
+.photo {
+    max-width: 300px;
+    margin-right: 100px;
+    display: inline-block; /* Display the photo div inline */
+    vertical-align: top; /* Align to the top of the container */
 }
 
-.left-container {
-    left: 0;
+.photo img {
+    width: 100%; 
+    margin-right: 30px;/* Make the image responsive */
 }
-.right-container {
-    left: 50%;
-}
-.timeline::after {
-    content: '';
-    position:absolute;
-    width: 6px;
-    height: 100%;
-    background: white;
-    top:0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-    animation: moveline 6s linear forwards;
+.involvement {
+    margin-bottom: 40px;
 }
 
-@keyframes moveline {
-    0%{
-        height: 0;
+
+/* Additional styling for responsiveness */
+@media screen and (max-width: 768px) {
+    .content-container {
+        display: block; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center text on smaller screens */
     }
-    100%{
-        height: 100%;
+
+    .introduction,
+    .photo {
+        max-width: 100%; /* Allow elements to take full width on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 20px; /* Add margin between the divs on smaller screens */
+        display: block; /* Display the divs as block on smaller screens */
     }
+    .interests h2 {
+        margin-bottom: 20px;
+        justify-content: left;;
+    }
+.interest {
+    margin-bottom: 100px;
+    }
+}
+.footerContainer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.language, .tools {
+    display: inline-block;
+    width: 48%; /* Adjust as needed, you can use percentages or fixed values */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    vertical-align: top; /* Align the top of both inline-block elements */
+    margin-bottom: 50px;
 }
 
-.left-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid white;
-    right: -15px;
-}
 
-.right-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid white;
-    left: -15px;
-}
-.text-box-wireframe {
-    padding: 20px 30px;
-    background: white;
-    position: relative;
-    border-radius: 10px;
-    font-size: 15px; 
-    
-}
 
-.wireframe img {
-    width: 600px;
-}
-.container:nth-child(1) {
-    animation-delay: 1s;
-    }
-    .container:nth-child(2) {
-    animation-delay: 2s;
-    }
-    .container:nth-child(3) {
-    animation-delay: 3s;
-    }
-    .container:nth-child(4) {
-        animation-delay: 6s;
-    }
-    .container:nth-child(5) {
-    animation-delay: 67;
-    }
- 
 
-    .social {
-        display:flex;
-        justify-content: right;
-    }
-    
-    .social img {
-        width: 100%;
-        height: 30px;
-    }
-    .social  a{
-        text-decoration: none;
-        padding:10px;
-        background-color: white;
-        margin:10px;
-        border-radius:50%;
-    }
-    .social  a:hover {
-        background-color: lavenderblush;
-        transition: 0.5s;
-    }
-    
-    .footerContainer {
-        background-color: lightgray;
-        width: 100%;
-        padding: 70px 30px 20px;
-    }
-    
-    

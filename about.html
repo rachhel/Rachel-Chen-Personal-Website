@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class = "content-container">
+            <div class="photo">
+                <img src="assets/FullSizeR.jpg" alt="Rachel's Photo">
+            </div>
+
+            <div class = "button-container">
+                <a href="assets/RACHEL'S RESUME FINAL.pdf" class="btn" target="_blank"><span>Resume</span></a>
+            </div>
+            </div>
+        <div class="introduction">
+         
+            <h2>  Hi! I'm Rachel Chen</h2>
+            <p>I'm a second year <span class="dark-blue">Computer Science and Design</span> student with a concentration in Interaction 
+                Design and a minor in <span class="dark-blue">Brand Management</span> at <span class="dark-blue">Northeastern 
+                    University</span> in Boston, Massachusetts. I'm originally from Los Angeles, California, which is how I became so 
+                    accustomed to so many different creative outlets.</p>
+
+
+                    <p>I've always had a love for art and found myself being the creative one in group projects. I didn't know how 
+                        I could incorporate art into my career until I discovered UI/UX design
+                         <span class="dark-blue">Through my work, I hope to create advances 
+                            in the digital world and positively impact users.</span>.  I'm passionate about creating 
+                         seamless and user-centric experiences!</p>
+
+                    <p>My academic journey centers around <span class="dark-blue">full stack development</span>,
+                         <span class="dark-blue">software engineering</span>, <span class="dark-blue">web 
+                            development</span>, and <span class="dark-blue">UI/UX design</span>.</p>
+                        
+
+                    <p> I'm a very interdisciplinary individual. Growing up, I was deeply 
+                        involved in health sciences and even though it's not my professional path anymore, 
+                        I still have a passion for the healthcare industry and <span class="dark-blue">I am enthusiastic about the 
+                            potential that arises when technology, healthcare, and design come together.</span> </p> 
+            </div>
+
+       
+    
+<script>
+    const btn = document.querySelector('.btn')
+    btn.onmousemove = function(e){
+        const x = e.pageX - btn.offsetLeft;
+        const y = e.pageY - btn.offsetTop;
+
+        btn.style.setProperty('--x', x + 'px');
+        btn.style.setProperty('--y', y + 'px');
+
+    }
+</script>
+    
+
+    
+    <div class = "facts-container" >
+        <div class = "involvement"> 
+            <h2> What I'm involved in </h2>
+            <ul class = "involve">
+                <li><a href="https://www.huskyambassadors.org/" target="_blank"> ⋆𐙚 Husky Ambassador @ <span style="color: darkblue;">Northeastern University Undergraduate Admissions</span></a></li>
+                <li><a href="https://scout.camd.northeastern.edu/" target="_blank"> ⋆𐙚 Developer/Designer @ <span style="color: darkblue;">Scout</span></a></li>
+                <li><a href="https://www.neu-kpl.org/" target="_blank"> ⋆𐙚 Philanthropy and Historian Chair @ <span style="color: darkblue;">Kappa Phi Lambda</span></a></li>
+                <li><a href="https://nudanco.weebly.com/" target="_blank"> ⋆𐙚 Dancer @ <span style="color: darkblue;">NUDANCO</span></a></li>
+
+            </ul>
+         </div>
+         <h2> Other interests of mine! </h2>
+         <div class = "interest">
+            <ul class = "interests">
+                <li> ♡ dance! I've been dancing since I was 3, and competed ever since 10yrs old, 
+                    <br> ♡ I love ballet, contemporary, jazz, hiphop  </li>
+                <li> ♡ tennis!! love both watching and playing with family.   </li>
+                <li> ♡ Video Editing: Check out my <a href="https://www.youtube.com/channel/UC2CJ0rcJTzGUOPE-aKf0vPw" target="_blank"><span style="color: darkblue;">YouTube</span></a>!</li>
+                <li> ♡ fashion  </li>
+                <li> ♡ I'm an ENFP!   </li>
+                <li> ♡ cafe hopping + matcha  </li>
+                <li> ♡ concerts + live music events </li>
+                <li> ♡ film photos and cameras </li>
+                <li> ♡ journaling/scrapbooking/bullet journal </li>
+                <li> ♡ traveling and documenting through photos/videos  </li>
+             </ul>
+         </div>
+         
+    </div>
+
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/rachelchen1016" target="_blank">
+                    <img src="assets/linkedin.webp" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/rachhel" target="_blank">
+                    <img src="assets/github.png" alt="Github">
+                </a>
+                <a href="mailto:chen.rachel1@northeastern.edu" target="_blank">
+                    <img src="assets/email.png" alt="Email">
+                </a>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy; 2024; Made with Love by Rachel ᡣ • . • 𐭩 ♡ </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="about.js"></script>
+</body>
+</html>
