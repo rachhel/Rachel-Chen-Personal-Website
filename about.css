@@ -360,3 +360,65 @@ p {
 
 
 
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Add padding to body when the navigation is fixed at the top */
+    }
+
+    #desktop-nav {
+        display: none; /* Hide desktop navigation on smaller screens */
+    }
+
+    #hamburger-nav {
+        display: flex; /* Display hamburger navigation on smaller screens */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none; /* Hide regular navigation links on smaller screens */
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .hamburger-menu {
+        display: block; /* Display hamburger icon on smaller screens */
+    }
+
+    .menu-links {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu-links a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-links.open {
+        max-height: 300px;
+    }
+
+    .btn {
+        margin: 20px auto; /* Center the button on smaller screens */
+    }
+
+    .footerContainer {
+        margin-top: 20px; /* Adjust margin on smaller screens */
+        padding: 40px 20px; /* Adjust padding on smaller screens */
+    }
+
+    .social {
+        justify-content: center; /* Center social icons on smaller screens */
+    }
+}
