@@ -58,6 +58,10 @@ a:hover {
 }
 .logo:hover {
     cursor: default;
+    
+    transform: scale(1.1); /* increase the size on hover */
+        /* You can add other styles for the hover effect, such as changing color, adding a border, etc. */
+    
 }
 
 .nav-links li a:hover {
@@ -67,6 +71,7 @@ a:hover {
 .logo img {
     width: 5rem; 
     height: auto; 
+    transition: transform 0.3s ease-in-out;
 }
 /*HAMBURGER-MENU*/
 #desktop-nav {
@@ -222,6 +227,7 @@ body {
     text-align: left; /* Align the content to the left */
     display: flex;
     align-items: center;
+    font-size: 18px;
 }
 
 .info-container > h4 {

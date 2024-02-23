@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     
 
 }
@@ -24,6 +25,11 @@ display: block;
 justify-content: center;
 background: whitesmoke;
 background: url(assets/gridin.png);
+min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+flex:1;
+}
+.main-container {
+    flex: 1; /* Allow the main content to take up remaining space */
 }
 
 html {
@@ -73,6 +79,7 @@ a:hover {
 }
 .logo:hover {
     cursor: default;
+    transform: scale(1.1);
 }
 
 .nav-links li a:hover {
@@ -82,6 +89,9 @@ a:hover {
 .logo img {
     width: 5rem; 
     height: auto; 
+    transition: transform 0.3s ease-in-out;
+
+
 }
 /*HAMBURGER-MENU*/
 #desktop-nav {
@@ -238,7 +248,11 @@ a:hover {
     display: inline-block;
 
 }
-
+@media screen and (max-width: 768px) {
+    .main-container {
+        margin-top: 20px; /* Adjust the margin for smaller screens */
+    }
+}
 .btn span {
     position:relative;
     z-index:1;
@@ -266,7 +280,7 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-    background: url(assets/gridin.png); 
+    /* background: url(assets/gridin.png);  */
     align-items: center;
 
 }
@@ -298,6 +312,10 @@ a:hover {
 
 }
 
+.facts-container {
+    margin-bottom: 10px;
+
+}
 
 
 h2 {
@@ -323,6 +341,9 @@ p {
     margin-bottom: 40px;
 }
 
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
 
 /* Additional styling for responsiveness */
 @media screen and (max-width: 768px) {
@@ -342,14 +363,9 @@ p {
         margin-bottom: 20px;
         justify-content: left;;
     }
-.interest {
-    margin-bottom: 40px;
-    }
-}
-.footerContainer {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+
+
+
 .language, .tools {
     display: inline-block;
     width: 48%; /* Adjust as needed, you can use percentages or fixed values */
@@ -421,4 +437,5 @@ p {
     .social {
         justify-content: center; /* Center social icons on smaller screens */
     }
+}
 }

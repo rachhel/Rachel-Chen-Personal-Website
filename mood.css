@@ -67,6 +67,7 @@ a:hover {
 }
 .logo:hover {
     cursor: default;
+    transform: scale(1.1);
 }
 
 .nav-links li a:hover {
@@ -76,6 +77,8 @@ a:hover {
 .logo img {
     width: 5rem; 
     height: auto; 
+    transition: transform 0.3s ease-in-out;
+
 }
 /*HAMBURGER-MENU*/
 #desktop-nav {
