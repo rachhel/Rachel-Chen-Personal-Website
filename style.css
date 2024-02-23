@@ -472,4 +472,47 @@ to {
     z-index: 99;
 
 }
+/* style.css */
+
+/* Add your existing styles here */
+
+/* Example media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    /* Update navigation styles */
+    #desktop-nav {
+        display: none; /* Hide desktop navigation on smaller screens */
+    }
+
+    #hamburger-nav {
+        display: block; /* Show hamburger navigation on smaller screens */
+    }
+
+    /* Make the parallax images stack on top of each other */
+    .paralax .paralex-item {
+        height: 200px; /* Adjust the height for smaller screens */
+    }
+
+    /* Adjust container width for smaller screens */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Make profile image and text stack on top of each other */
+    .info-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust card styles for smaller screens */
+    .card_article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
